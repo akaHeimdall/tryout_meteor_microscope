@@ -1,3 +1,19 @@
 <template name="postPage">
+<<<<<<< HEAD
     {{> postItem}}
+=======
+  {{> postItem}}
+  
+  <ul class="comments">
+    {{#each comments}}
+      {{> comment}}
+    {{/each}}
+  </ul>
+  
+  {{#if currentUser}}
+    {{> commentSubmit}}
+  {{else}}
+    <p>Please log in to leave a comment.</p>
+  {{/if}}
+>>>>>>> 97db48e8d1e0bf4a4abed9d1a0fd1d8a2b85e9ee
 </template>

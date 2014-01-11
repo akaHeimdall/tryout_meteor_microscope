@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // var postsData = [
 //      {
 //          title: 'Introducing Telescope',
@@ -21,3 +22,18 @@ Template.postsList.helpers({
         return Posts.find();
     }
 });
+=======
+Template.postsList.helpers({
+  postsWithRank: function() {
+    this.posts.rewind();
+    return this.posts.map(function(post, index, cursor) {
+      post._rank = index;
+      return post;
+    });
+  },
+  hasMorePosts: function(){
+    this.posts.rewind();
+    return Router.current().limit() == this.posts.fetch().length;
+  }
+});
+>>>>>>> 97db48e8d1e0bf4a4abed9d1a0fd1d8a2b85e9ee
