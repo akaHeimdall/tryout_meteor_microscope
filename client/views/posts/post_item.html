@@ -1,7 +1,10 @@
 <template name="postItem">
   <div class="post">
     <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      <h3>
+        
+        <a href="{{url}}">{{title}}</a><span><i class="fa fa-link"></i> {{domain}}</span>
+      </h3>
       <p>
         Submitted on {{submitted}} by {{author}}
         {{#if ownPost}}<a class="" href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}

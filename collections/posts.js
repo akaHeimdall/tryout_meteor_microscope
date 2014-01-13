@@ -8,7 +8,14 @@ Posts.allow({
 Posts.deny({
     update: function(userId, post, fieldNames) {
         //may only edit the following two fields
-        return(_.without(fieldNames, 'url','title').length > 0);
+        return(_.without(fieldNames, 'url','title','message','lastModified').length > 0);
+    }
+});
+
+Posts.deny({
+    update: function(userId, doc, fieldNames, modifier) {
+        doc.lastModified = +(new Date());
+        return false;
     }
 });
 
@@ -36,7 +43,9 @@ Meteor.methods({
         var post = _.extend(_.pick(postAttributes, 'url', 'title', 'message'), {
             userId: user._id,
             author: user.username,
-            submitted: new Date().getTime()
+            message: user.message,
+            submitted: new Date().getTime(),
+            lastModified: new Date().getTime()
         });
 
         var postId = Posts.insert(post);
