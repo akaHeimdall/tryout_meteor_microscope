@@ -12,7 +12,7 @@ Template.postSubmit.events({
             if (error) {
                 // return alert(error.reason);
                 // diplay error to user
-                throwError(error.reason);
+                Errors.throw(error.reason);
 
                 // and if duplicate send to that page to edit
                 // shouldn't this be cased if has permissions?
