@@ -45,7 +45,8 @@ Meteor.methods({
             author: user.username,
             message: user.message,
             submitted: new Date().getTime(),
-            lastModified: new Date().getTime()
+            lastModified: new Date().getTime(),
+            commentsCount: 0
         });
 
         var postId = Posts.insert(post);

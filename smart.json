@@ -3,6 +3,7 @@
     "iron-router": {},
     "spin": {},
     "accounts-ui-bootstrap-dropdown": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "meteor_flash_errors": {}
   }
 }

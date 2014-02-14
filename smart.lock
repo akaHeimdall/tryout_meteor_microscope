@@ -5,7 +5,8 @@
       "iron-router": {},
       "spin": {},
       "accounts-ui-bootstrap-dropdown": {},
-      "font-awesome": {}
+      "font-awesome": {},
+      "meteor_flash_errors": {}
     },
     "packages": {
       "iron-router": {
@@ -27,6 +28,11 @@
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
         "tag": "v4.0.3",
         "commit": "61e9361384347547ae144f8228faa4deffda23db"
+      },
+      "meteor_flash_errors": {
+        "git": "https://github.com/imarichardson/ima_Meteor_Errors.git",
+        "tag": "v0.1.2",
+        "commit": "7915e90d1cedf7da57828656c65a353c7770b005"
       }
     }
   }

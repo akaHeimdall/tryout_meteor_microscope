@@ -11,4 +11,4 @@ spin
 accounts-ui-bootstrap-dropdown
 accounts-password
 font-awesome
-errors
+# meteor_flash_errors

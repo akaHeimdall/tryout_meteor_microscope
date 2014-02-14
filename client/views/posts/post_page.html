@@ -1,3 +1,16 @@
 <template name="postPage">
     {{> postItem}}
+    {{#if commentsCount GT 0}} <strong>COMMENTS:</strong> {{/if}}
+    {{#if ownPost}}<a class="" href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+    <ul class="comments">
+        {{#each comments}}
+            {{> comment}}
+        {{/each}}
+    </ul>
+
+    {{#if currentUser}}
+        {{> commentSubmit}}
+    {{else}}
+        <p>Please log in to leave a comment.</p>
+    {{/if}}
 </template>
