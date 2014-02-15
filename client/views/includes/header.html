@@ -11,6 +11,9 @@
                 <ul class="nav">
                     {{#if currentUser}}
                         <li class=""><a class="" href="{{pathFor 'postSubmit'}}">New Post</a></li>
+                        <li class="dropdown">
+                            {{> notifications}}
+                        </li>
                     {{/if}}
                 </ul>
                 <ul class="nav pull-right">

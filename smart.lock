@@ -6,7 +6,8 @@
       "spin": {},
       "accounts-ui-bootstrap-dropdown": {},
       "font-awesome": {},
-      "meteor_flash_errors": {}
+      "meteor_flash_errors": {},
+      "iron-router-progress": {}
     },
     "packages": {
       "iron-router": {
@@ -33,6 +34,11 @@
         "git": "https://github.com/imarichardson/ima_Meteor_Errors.git",
         "tag": "v0.1.2",
         "commit": "7915e90d1cedf7da57828656c65a353c7770b005"
+      },
+      "iron-router-progress": {
+        "git": "https://github.com/Multiply/iron-router-progress.git",
+        "tag": "v0.2.0",
+        "commit": "ce730d1d26feadb7c75ea25f22c5bfdb0c549a8b"
       }
     }
   }

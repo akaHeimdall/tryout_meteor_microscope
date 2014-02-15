@@ -4,6 +4,7 @@
     "spin": {},
     "accounts-ui-bootstrap-dropdown": {},
     "font-awesome": {},
-    "meteor_flash_errors": {}
+    "meteor_flash_errors": {},
+    "iron-router-progress": {}
   }
 }

@@ -12,3 +12,4 @@ accounts-ui-bootstrap-dropdown
 accounts-password
 font-awesome
 # meteor_flash_errors
+iron-router-progress

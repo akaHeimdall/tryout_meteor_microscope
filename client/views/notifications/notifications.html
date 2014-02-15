@@ -1,0 +1,28 @@
+<!-- notifications.html -->
+
+<template name="notifications">
+    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Notifications
+        {{#if notificationCount}}
+            <span class="badge badge-inverse">{{notificationCount}}</span>
+        {{/if}}
+        <b class="caret"></b>
+    </a>
+    <ul class="notification dropdown-menu">
+        {{#if notificationCount}}
+            {{#each notifications}}
+                {{> notification}}
+            {{/each}}
+        {{ else}}
+            <li><span>No notifications</span></li>
+        {{/if}}
+    </ul>
+</template>
+
+<template name="notification">
+    <li>
+        <a class="" href="{{notificationPostPath}}">
+        <strong>{{commenterName}}</strong> commented on your post.
+        </a>
+    </li>
+</template>
